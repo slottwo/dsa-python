@@ -1,7 +1,7 @@
 class Heap():
     def __init__(self, *vector: int) -> None:
         self._elem = list(vector)
-        for i in range(len(vector)//2, 0, -1):
+        for i in range(len(vector)//2, -1, -1):  # i from n//2 to 0
             self.__down(i)
 
     def __up(self, i: int):
@@ -42,7 +42,3 @@ class Heap():
 
     def Heapsort(self):
         pass
-
-
-h = Heap(2, 3, 404, 29, 0, 12)
-print(h._elem)
