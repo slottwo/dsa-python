@@ -1,5 +1,7 @@
 class Heap():
     def __init__(self, *array: int) -> None:
+        """Initialize a Heap object with none or a series of integers.
+        """
         self.__elem = list(set(array))
         i = len(self)//2
         while i >= 0:  # i from n//2 to 0
